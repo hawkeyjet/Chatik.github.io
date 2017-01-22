@@ -1,0 +1,33 @@
+@import mixins
+.header
+  position: relative
+  @include clearfix()
+  width: 100%
+  border: 1px solid black
+  background: #cfe2f3
+  margin-top: 20px
+
+.header_info
+  float: left
+  width: 30%
+  word-wrap: break-word
+
+.header_status-list, .header_settings-list
+  margin: 20px 14px
+
+.header_settings-link
+  color: black
+  &:hover
+    color: red
+
+.header_logo
+  background: #96FF86
+  display: inline-block
+  vertical-align: middle
+  width: 70%
+  .logo_pic
+    padding-top: 2px
+    display: block
+    max-width: 95%
+    max-height: 95%
+    margin: auto

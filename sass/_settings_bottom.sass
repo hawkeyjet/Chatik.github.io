@@ -1,0 +1,68 @@
+@import "mixins"
+.setting_bottom
+  position: relative
+  padding-top: 10px
+  width: 70%
+  float: right
+  @include clearfix()
+
+.info_symbol-list
+  font: normal 10pt Arial, sans-serif
+  float: left
+
+.settings_item-menu
+  position: relative
+  top: -15px
+  float: left
+  display: block
+  width: 20px * 8
+
+.settings_item-left li
+  float: left
+  display: inline-block
+  width: 20px
+  height: 20px
+  text-align: center
+  background: #cfe2f3
+  border: 1px solid black
+  border-right: none
+  cursor: pointer
+  &:last-child
+    border-right: 1px solid black
+  &:hover
+    color: red
+
+.settings_item-right li
+  display: inline-block
+  float: right
+  width: 20px * 2
+  border: 1px solid black
+  text-align: center
+  background: #cfe2f3
+  cursor: pointer
+  &:hover
+    color: red
+
+.settings_bold-item
+  font-weight: bold
+.settings_italic-item
+  font-style: italic
+.settings_underscore-item
+  text-decoration: underline
+
+.sendMessage
+  float: right
+  border: none
+  width: 25%
+  font: normal 13pt/1.7em Arial, sans-serif
+  background: #cfe2f3
+  border: 1px solid black
+  cursor: pointer
+  outline: none
+  &:hover
+    background: darken(#cfe2f3, 10)
+    color: red
+  &:active
+    top: .1em
+    left: .1em
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset

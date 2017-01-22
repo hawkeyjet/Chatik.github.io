@@ -1,0 +1,32 @@
+.room
+  position: absolute
+  border: 1px solid black
+  border-bottom: none
+  top: -5.5%
+  left: 50%
+  margin-left: -70% / 4
+
+.room_cell-item
+  height: 100%
+  display: inline-block
+  margin: 0
+  padding: 0
+  border-right: 1px solid black
+  margin-left: -0.29em
+  &:first-child
+    margin-left: 0
+  &:last-child
+    border-right: none
+  &:hover
+    background: #96FF86
+
+.room_cell-link
+  color: black
+  vertical-align: middle
+  font: normal 12pt/12pt Arial, sans-serif
+  padding: 1px 15px
+  text-decoration: none
+  &:focus
+    background: #cfe2f3
+  &:hover
+    color: red

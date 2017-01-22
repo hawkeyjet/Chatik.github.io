@@ -1,0 +1,136 @@
+extends _doctype
+include mixins
+block title
+    title Chatik
+block content
+    div.wrapper
+        div.container
+            header.header
+                div.header_info
+                    ul.header_status-list
+                        li.header_status-item
+                            span.status_title You are online for: 1h 30m
+                        li.header_status-item
+                            span.status_title Your local time is: 10:45
+                    ul.header_settings-list
+                        li.settings-item
+                            a(href="#" class="header_settings-link")
+                                span.header_settings-title Edit personal info
+                        li.settings-item
+                            a(href="#" class="header_settings-link")
+                                span.header_settings-title Private messages (3)
+                div.header_logo
+                    a.logo(href="#")
+                        img.logo_pic(src="img/header.png")
+            section.main_content
+                aside.sidebar
+                    div.sidebar_status Online: 4
+                    div.sidebar_users
+                        ul.sidebar_users-list
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title John Show
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Andrew Simpson
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Alison Black
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+                            li.sidebar_user-link
+                                a(href="#", class="sidebar_user-link")
+                                    span.sidebar_user-title Sasha Stuart
+
+                main.display
+                    div.room
+                        ul.room_cell-list
+                            li.room_cell-item
+                                a(href="#", class="room_cell-link") Main chat
+                            li.room_cell-item
+                                a(href="#", class="room_cell-link") Chat with Alison
+                                    span.room_cell-number  (2)
+                                    span.room_cell-close  [x]
+                    div.display_area
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Hi, how is the weather there?
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") Alison Black:
+                            span.display_area-message  It's snowy, temperature here is 10 degrees below zero celsius.
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                        div.display_area-wrapper
+                            a(href="#", class="display_title-link") John Snow:
+                            span.display_area-message  Wuh, it seems winter has come indeed...
+                    form(action="#" class="field_area")
+                        textarea(id="#" placeholder="Your message" class="textarea-input")
+
+            section.setting_bottom
+                ul.info_symbol-list
+                    li.info_symbol-item
+                        span.info_characters 31 characters entered
+                    li.info_symbol-item
+                        span.info_letters 25 letters entered
+                    li.info_symbol-item
+                        span.info_whitespace 4 whitespace characters entered
+                    li.info_symbol-item
+                        span.info-punctuation 2 punctuation marks entered
+                div.settings_item-menu
+                    ul.settings_item-left
+                        li.settings_bold-item  B
+                        li.settings_italic-item /
+                        li.settings_underscore-item U
+                    ul.settings_item-right
+                        li.settings-link-item Link
+                button.sendMessage Send message
